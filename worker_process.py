@@ -7,7 +7,6 @@ app = faust.App(
     'appProcess',
     broker=WORKER_BROKER
 )
-# python worker.py worker -l info --web-port=6067
 
 @app.page('/data')
 class SendData(View):
